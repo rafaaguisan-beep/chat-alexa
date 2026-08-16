@@ -30,7 +30,7 @@ if p := st.chat_input("Pergunte algo..."):
         st.write("Pensando...")
         client = genai.Client(api_key=CHAVE_GEMINI)
         res = client.models.generate_content(
-            model='gemini-2.0-flash',
+            model='gemini-3.5-flash',
             contents="Responda curto para ler em voz alta: " + p
         )
         st.markdown(res.text)
