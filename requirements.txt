@@ -1,0 +1,4 @@
+streamlit
+alexapy
+google-genai
+nest_asyncio
