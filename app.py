@@ -31,7 +31,7 @@ if p := st.chat_input("Pergunte algo..."):
         client = genai.Client(api_key=CHAVE_GEMINI)
         res = client.models.generate_content(
             model='gemini-3.5-flash',
-            contents="Responda curto para ler em voz alta: " + p
+            contents="Responda como um assistente de familia neutro e amigavel sem respostas longas, roboticas, excessivamente curtas ou com girias para a alexa ler em voz alta: " + p
         )
         st.markdown(res.text)
         nest_asyncio.apply()
